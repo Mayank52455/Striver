@@ -1,0 +1,36 @@
+Array to Linked List Conversion – Explanation
+
+This program converts a normal Python list (array) into a singly linked list.
+
+A linked list is a chain of nodes where each node stores a value and a pointer to the next node.
+
+Node Class
+Each node contains two parts:
+• data – the value stored in the node
+• next – the reference (pointer) to the next node
+
+Creating the Linked List
+The function takes an array and builds a linked list using the following steps:
+
+Step 1: Check if the array is empty.
+If the array has no elements, the function returns None because there is nothing to convert.
+
+Step 2: Create the head node.
+The first element of the array becomes the first node (head) of the linked list.
+
+Step 3: Loop through the rest of the array.
+For every remaining value in the array:
+• Create a new node
+• Link it to the current last node
+• Move the current pointer to the newly created node
+
+This builds the linked list one node at a time.
+
+Step 4: Return the head node.
+The head of the list gives access to the entire linked list.
+
+Printing the Linked List
+A helper function prints the linked list by starting from the head and following each next pointer until the end of the list is reached.
+Each value is printed in the format:
+
+value1 -> value2 -> value3 -> … -> last_value
