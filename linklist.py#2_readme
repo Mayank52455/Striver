@@ -1,0 +1,30 @@
+Insert at End of Linked List – Explanation
+
+This function inserts a new value at the end of a singly linked list.
+
+Node Structure
+Each node contains:
+• data – the stored value
+• next – pointer to the next node in the list
+
+Creating the New Node
+We first create a new node with the value we want to insert.
+
+Empty Linked List Case
+If the head is None, the list is empty.
+So the new node becomes the first and only node.
+We return it as the new head.
+
+Traverse to the End
+If the list already has nodes, we start from the head and move forward using the next pointer until we reach the last node (where next is None).
+
+Insert the New Node
+Once we reach the last node, we set its next pointer to the new node.
+This attaches the new node at the end of the linked list.
+
+Example
+If the list is:
+10 -> 20 -> 30
+
+And we insert 40, the updated list becomes:
+10 -> 20 -> 30 -> 40
