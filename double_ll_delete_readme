@@ -1,0 +1,26 @@
+Delete Node from Doubly Linked List – Explanation
+
+This function deletes a node at a given position x from a doubly linked list.
+
+Steps:
+
+Invalid Case
+If the list is empty or the position is invalid (x <= 0), return the list unchanged.
+
+Delete Head Node
+If x = 1, the first node is removed.
+The head is moved to the next node and its prev pointer is set to None.
+
+Traverse to the Node
+Start from the head and move forward until the x-th node is reached.
+
+Out of Range
+If the position does not exist, return the original list.
+
+Pointer Adjustment
+To delete the node:
+• The previous node’s next is linked to the next node
+• The next node’s prev is linked to the previous node
+
+Return Head
+The head of the list is returned after deletion
