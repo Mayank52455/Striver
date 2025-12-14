@@ -1,0 +1,38 @@
+This function converts an array into a doubly linked list.
+
+Each node in a doubly linked list has:
+• data – value of the node
+• next – pointer to the next node
+• prev – pointer to the previous node
+
+Steps:
+
+Empty Array Check
+If the array is empty, return None because no list can be created.
+
+Initialize Head and Tail
+Head points to the first node of the list.
+Tail keeps track of the last node for easy insertion.
+
+Loop Through the Array
+For each value in the array:
+• Create a new node
+• If the list is empty, set both head and tail to this node
+• Otherwise:
+
+Link the new node to the end using tail.next
+
+Set new_node.prev to the current tail
+
+Move tail to the new node
+
+Return Head
+Returning the head allows traversal of the entire doubly linked list.
+
+Example:
+
+Array:
+[10, 20, 30]
+
+Doubly Linked List:
+10 ⇄ 20 ⇄ 30
